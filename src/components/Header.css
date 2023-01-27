@@ -1,0 +1,36 @@
+#Navbar{
+    width:100% ;
+     height:40px; 
+    border:1px solid transparent ;
+    display:flex; 
+    background-color:white;
+    justify-content: space-between;
+    position:fixed;
+    box-shadow: inset black;
+    scrollbar-shadow-color: black;
+}
+#Navbar div:nth-child(1){
+    margin: 10px;
+    justify-content: space-between;
+}
+#Navbar div:nth-child(2) {
+    margin-left: 650px;
+    margin-top: 6px;
+    font-size: 13px;
+    border-radius: 9px;
+    height: 30px;
+    width: 450px;
+    background-color: white;
+    border: 1px solid black;
+}
+#Navbar div:nth-child(2) > i{
+    margin-left: 10px;
+    margin-top: 9px;
+}
+#Navbar div:nth-child(2) > input{
+    border:none;
+    outline: none;
+    width:400px;
+    font-size: 10px;
+    margin-left: 10px;
+}
