@@ -3,9 +3,13 @@ import { useState } from "react";
 // import userContext from'./userContext';
 import { useEffect } from "react";
 import "./Header.css";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({}) => {
   const [userName, setUserName] = useState();
+   const router =useNavigate();
+
+
 
   // useEffect(()=>{
   //   const dbUser = JSON.parse(localStorage.getItem("userData"))
@@ -26,10 +30,14 @@ const Header = ({}) => {
       </div>
       <div>
         <button>
-          <a href="./Products">products</a>
+          {/* <a href="./Products">products</a> */}
+          <button id="CARTButton" onClick={()=>router('/Products')}>Products</button>
+          {/* <button>Products</button> */}
         </button>
         <button>
-          <a href="./Cart">cart</a>
+          {/* <a href="./Cart">cart</a> */}
+          {/* <button onClick={()=>addToCart(e)}>AddCart</button> */}
+          <button id="CARTButton" onClick={()=>router('/Cart')}>CART</button>
           <i class="fa-solid fa-cart-shopping fa-xl"></i>
         </button>
         <button>
